@@ -1,5 +1,7 @@
 # DevMountain Phoenix Personal Project Rubric
 
+> This is a work in progress and will change before your personal project begins.
+
 The intent of a personal projects is to build something using technologies you have been taught, as well as to learn new technologies on your own.
 
 This rubric serves to guide students and mentors in the requirements. Wherever there is ambiguity on what the requirements are, focus on the goal of learning.

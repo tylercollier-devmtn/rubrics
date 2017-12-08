@@ -29,3 +29,7 @@ When in doubt, ask your mentor if you are on track. Don't wait until the last se
 8. Query string parameters are like the `name` (and associated value) in `/api/books/search?name=harry`.
 9. API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain/mutate data. You get 0.5 points per endpoint. You could do different requests from a single API (not counting URL or query string parameters), or one or more requests from multiple APIs.
 10. Full CRUD means create, read, update, and delete, aka POST, GET, PUT/PATCH, DELETE from your own server.
+
+## Presentations
+
+You will present to your mentor groups. Presentations are informal. They take about 2-3 minutes or so. You will present as a developer, as opposed to a 'business' trying to get someone to use your product. There's no pressure to make this great, there is no grade. You will show off the product, code if you want to show a neat part, and your takeaway from the experience.
