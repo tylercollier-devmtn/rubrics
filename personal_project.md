@@ -19,6 +19,43 @@ Always required:
 * 1 foreign key and a JOIN statement
     * Yes, you need a JOIN. Usually this means you'd be displaying a list somewhere. Some sites, with the small scope of intended functionality, don't lend themselves to such a list with the database's data. A simple workaround for this is to create an admin page which displays the data. Such a page can even be public if it doesn't contain sensitive information; perhaps don't have a link to the admin page on the site itself but tell users in the README or a private email how to view it (e.g. by visiting #/admin). An example of such a list might be, for a store, all orders for all users. Or what about users without an order (use an outer join)?
 
+| Category            | Name                           | Points | Description               |
+|---------------------|--------------------------------|--------|---------------------------|
+| Testing             |                                |        |                           |
+|                     | Unit Tests                     | 30     | There will be a link here |
+|                     | Endpoint Tests                 | 20     |                           |
+|                     | E2E Tests                      | 40     |                           |
+| Modules/Build tools |                                |        |                           |
+|                     | 3rd Party Api                  | 20 per |                           |
+|                     | Sass/Less                      | 10     |                           |
+|                     | Webpack/Browserify             | 20     |                           |
+| Frameworks          |                                |        |                           |
+|                     | Redux/Thunks                   | 10     |                           |
+|                     | Angular 2                      | 40     |                           |
+|                     | Angular 1.5 Components         | 30     |                           |
+|                     | React Native                   | 30     |                           |
+|                     | Electron                       | 20     |                           |
+| Planning/Design     |                                |        |                           |
+|                     | Domain Registration            | 10     |                           |
+|                     | Defined MVP/API                | 10     |                           |
+|                     | Responsive                     | 20     |                           |
+| Hosting             |                                |        |                           |
+|                     | Zeit, Heroku (easy solutions)  | 0      |                           |
+|                     | Digital Ocean                  | 10     |                           |
+| Custom              |                                |        |                           |
+|                     | Instructor approves early on   | ?      |                           |
+| Techs               |                                |        |                           |
+|                     | Stripe                         | 20     |                           |
+|                     | s3                             | 10     |                           |
+|                     | Sockets                        | 20     |                           |
+|                     | ChartJs                        | 10     |                           |
+|                     | D3                             | 20     |                           |
+|                     | Other? (approved early on)     | 10-30  |                           |
+|                     | Custom/Styled Auth0 login form | 10     |                           |
+| Presentation        |                                |        |                           |
+|                     | Mentions Tech                  | 10     |                           |
+|                     | Uses Time Effectively          | 10     |                           |
+
 Total points required: 70
 
 * 3rd party API
