@@ -52,10 +52,11 @@ Always required:
 |                     | D3                             | 20     |                           |
 |                     | Other? (approved early on)     | 10-30  |                           |
 |                     | Custom/Styled Auth0 login form | 10     |                           |
+|                     | NodeMailer                     | 10     |                           |
+|                     | Twilio                         | 10     |                           |
 | Presentation        |                                |        |                           |
 |                     | Mentions Tech                  | 10     |                           |
 |                     | Uses Time Effectively          | 10     |                           |
-
 Total points required: 70
 
 * 3rd party API
