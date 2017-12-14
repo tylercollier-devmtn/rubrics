@@ -19,44 +19,40 @@ Always required:
 * 1 foreign key and a JOIN statement
     * Yes, you need a JOIN. Usually this means you'd be displaying a list somewhere. Some sites, with the small scope of intended functionality, don't lend themselves to such a list with the database's data. A simple workaround for this is to create an admin page which displays the data. Such a page can even be public if it doesn't contain sensitive information; perhaps don't have a link to the admin page on the site itself but tell users in the README or a private email how to view it (e.g. by visiting #/admin). An example of such a list might be, for a store, all orders for all users. Or what about users without an order (use an outer join)?
 
-| Category                                    | Name                                  | Points |
-|---------------------------------------------|---------------------------------------|--------|
-| [Testing](#testing)                         |                                       |        |
-|                                             | Unit Tests                            | 30     |
-|                                             | Endpoint Tests                        | 20     |
-|                                             | E2E Tests                             | 40     |
-| [Build tools](#build-tools)                 |                                       |        |
-|                                             | 3rd Party Api (Need a better section) | 20 per |
-|                                             | Sass/Less                             | 10     |
-|                                             | Webpack/Browserify                    | 20     |
-| [Frameworks](#frameworks)                   |                                       |        |
-|                                             | Redux/Thunks                          | 10     |
-|                                             | Angular 2                             | 40     |
-|                                             | Angular 1.5 Components                | 30     |
-|                                             | React Native                          | 30     |
-|                                             | Electron                              | 20     |
-| [Planning and Design](#planning-and-design) |                                       |        |
-|                                             | Domain Registration                   | 10     |
-|                                             | Defined MVP/API                       | 10     |
-|                                             | Responsive                            | 20     |
-| [Hosting](#hosting)                         |                                       |        |
-|                                             | Zeit, Heroku (easy solutions)         | 0      |
-|                                             | Digital Ocean                         | 10     |
-| Custom                                      |                                       |        |
-|                                             | Instructor approves early on          | ?      |
-| [Techs](#techs)                             |                                       |        |
-|                                             | Stripe                                | 20     |
-|                                             | s3                                    | 10     |
-|                                             | Sockets                               | 20     |
-|                                             | ChartJs                               | 10     |
-|                                             | D3                                    | 20     |
-|                                             | Other? (approved early on)            | 10-30  |
-|                                             | Custom/Styled Auth0 login form        | 10     |
-|                                             | NodeMailer                            | 10     |
-|                                             | Twilio                                | 10     |
-| [Presentation](#presentation)               |                                       |        |
-|                                             | Mentions Tech                         | 10     |
-|                                             | Uses Time Effectively                 | 10     |
+| Category                                    | Name                           | Points        |
+|---------------------------------------------|--------------------------------|---------------|
+| [Testing](#testing)                         |                                |               |
+|                                             | Unit Tests                     | 30            |
+|                                             | Endpoint Tests                 | 20            |
+|                                             | E2E Tests                      | 40            |
+| [Build tools](#build-tools)                 |                                |               |
+|                                             | Sass/Less                      | 10            |
+|                                             | Webpack/Browserify             | 20            |
+| [Planning and Design](#planning-and-design) |                                |               |
+|                                             | Domain Registration            | 10            |
+|                                             | Defined MVP/API                | 10            |
+|                                             | Responsive                     | 20            |
+| [Hosting](#hosting)                         |                                |               |
+|                                             | Zeit, Heroku (easy solutions)  | 0             |
+|                                             | Digital Ocean                  | 10            |
+| [Custom](#custom)                           |                                |               |
+|                                             | Instructor approves early on   | ?             |
+| [Techs](#techs)                             |                                |               |
+|                                             | 3rd Party API                  | 10 per/20 max |
+|                                             | Redux                          | 10            |
+|                                             | Stripe                         | 20            |
+|                                             | s3                             | 10            |
+|                                             | Sockets                        | 20            |
+|                                             | ChartJs                        | 10            |
+|                                             | D3                             | 20            |
+|                                             | Other? (approved early on)     | 10-30         |
+|                                             | Custom/Styled Auth0 login form | 10            |
+|                                             | NodeMailer                     | 10            |
+|                                             | Twilio                         | 10            |
+|                                             | CSS in JS                      | 10            |
+| [Presentation](#presentation)               |                                |               |
+|                                             | Mentions Tech                  | 10            |
+|                                             | Uses Time Effectively          | 10            |
 Total points required: 70
 
 * 3rd party API
@@ -74,38 +70,9 @@ Total points required: 70
 #### E2E Tests
 (Daniel)
 ### Build Tools
-#### 3rd party API
-
-API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain data.
-
-**What counts:**
-
-Examples include
-
-* The Star Wars API https://swapi.co/
-* The Pokemon API https://pokeapi.co/
-* A weather API, e.g. https://openweathermap.org/api
-
-**What doesn't count:**
-
-* you find a library that does most of the raw API calls for you. E.g. the Stripe client side library wouldn't count because it makes the web requests for you and hides you from this complexity. Note that Stripe is a library that DOES count for points as a "Tech" (see elsewhere in this document).
-
-Examples:
-* FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
 #### Less or Sass
-(Tyler)
+(Trevor)
 #### Webpack or Browserify
-(Tyler)
-### Frameworks
-#### Redux or Thunks
-(Tyler)
-#### Angular 2
-(Aaron)
-#### Angular 1.5 Components
-(Aaron)
-#### React Native
-(Jake)
-#### Electron
 (Tyler)
 ### Planning and Design
 #### Domain Registration
@@ -134,6 +101,26 @@ While many students receive instant access to Digital Ocean, some students were 
 ### Custom
 
 ### Techs
+#### 3rd party API
+
+API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain data.
+
+**What counts:**
+
+Examples include
+
+* The Star Wars API https://swapi.co/
+* The Pokemon API https://pokeapi.co/
+* A weather API, e.g. https://openweathermap.org/api
+
+**What doesn't count:**
+
+* you find a library that does most of the raw API calls for you. E.g. the Stripe client side library wouldn't count because it makes the web requests for you and hides you from this complexity. Note that Stripe is a library that DOES count for points as a "Tech" (see elsewhere in this document).
+
+Examples:
+* FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
+#### Redux
+(Tyler)
 #### Stripe
 (Tyler)
 #### S3
@@ -171,6 +158,11 @@ Examples of CSS-in-JS libraries:
 * [Radium](https://github.com/FormidableLabs/radium)
 
 ### Presentation
+#### Mentions Tech
+(Tyler)
+#### Uses Time Effectively
+(Tyler)
+(We need to finalize what time frame we need to give them)
 
 ## To add:
 * Goal is learning.
