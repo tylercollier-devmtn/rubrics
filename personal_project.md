@@ -19,6 +19,40 @@ Always required:
 * 1 foreign key and a JOIN statement
     * Yes, you need a JOIN. Usually this means you'd be displaying a list somewhere. Some sites, with the small scope of intended functionality, don't lend themselves to such a list with the database's data. A simple workaround for this is to create an admin page which displays the data. Such a page can even be public if it doesn't contain sensitive information; perhaps don't have a link to the admin page on the site itself but tell users in the README or a private email how to view it (e.g. by visiting #/admin). An example of such a list might be, for a store, all orders for all users. Or what about users without an order (use an outer join)?
 
+| Category                                    | Name                           | Points        |
+|---------------------------------------------|--------------------------------|---------------|
+| [Testing](#testing)                         |                                |               |
+|                                             | Unit Tests                     | 30            |
+|                                             | Endpoint Tests                 | 20            |
+|                                             | E2E Tests                      | 40            |
+| [Build tools](#build-tools)                 |                                |               |
+|                                             | Sass/Less                      | 10            |
+|                                             | Webpack/Browserify             | 20            |
+| [Planning and Design](#planning-and-design) |                                |               |
+|                                             | Domain Registration            | 10            |
+|                                             | Defined MVP/API                | 10            |
+|                                             | Responsive                     | 20            |
+| [Hosting](#hosting)                         |                                |               |
+|                                             | Zeit, Heroku (easy solutions)  | 0             |
+|                                             | Digital Ocean                  | 10            |
+| [Custom](#custom)                           |                                |               |
+|                                             | Instructor approves early on   | ?             |
+| [Techs](#techs)                             |                                |               |
+|                                             | 3rd Party API                  | 10 per/20 max |
+|                                             | Redux                          | 10            |
+|                                             | Stripe                         | 20            |
+|                                             | s3                             | 10            |
+|                                             | Sockets                        | 20            |
+|                                             | ChartJs                        | 10            |
+|                                             | D3                             | 20            |
+|                                             | Other? (approved early on)     | 10-30         |
+|                                             | Custom/Styled Auth0 login form | 10            |
+|                                             | NodeMailer                     | 10            |
+|                                             | Twilio                         | 10            |
+|                                             | CSS in JS                      | 10            |
+| [Presentation](#presentation)               |                                |               |
+|                                             | Mentions Tech                  | 10            |
+|                                             | Uses Time Effectively          | 10            |
 Total points required: 70
 
 * 3rd party API
@@ -27,26 +61,46 @@ Total points required: 70
      * Sendgrid
      * Nodemailer
 
-### Definitions
-
-#### Hosting
+## Definitions
+### Testing
+#### Unit Tests
+(Daniel)
+#### Endpoint Tests
+(Daniel)
+#### E2E Tests
+(Daniel)
+### Build Tools
+#### Less or Sass
+(Trevor)
+#### Webpack or Browserify
+(Tyler)
+### Planning and Design
+#### Domain Registration
+(Trevor)
+#### Defined MVP and API
+(Aaron)
+#### Responsive
+(Jake)
+### Hosting
 
 Note: hosting, in general, is tough. You should therefore not wait until the last moment to give it a try. It's tempting to do so, since it's sometimes thought of as the final step, but shouldn't be thought of in this matter because there are considerations to take into account. Depending on your technology choices, you might not be able to host with one solution vs others. See further consideration in the sections below.
 
-##### Zeit
+#### Zeit
 
 Gotchas:
 
 Zeit normally takes about 1 or 2 minutes to deploy. During one cohort's personal projects, some students were seeing times of 15-30 minutes. Sometimes random failures happened. This was later acknowledged and addressed by Zeit, but be advised.
 
-##### Digital Ocean
+#### Digital Ocean
 
 A note on how Digital Ocean servers (and others like it) are structured. Your app will run on some port number above 1024, like 3000, 3030, or whatever you choose. However, the normal http port is 80 and https is 443, which require root/admin access. Therefore, the pattern is to run a "reverse proxy" tool, such as Nginx or Apache, which will accept web requests on those ports, and forward the traffic to your node server. When setting up your Digital Ocean droplet, ensure you choose to have Nginx, and follow steps to forward the web traffic between ports.
 
 Gotchas:
 
 While many students receive instant access to Digital Ocean, some students were told to wait while their account access request was reviewed. Ultimately some students are denied for reasons not explained by Digital Ocean's communications with those students.
+### Custom
 
+### Techs
 #### 3rd party API
 
 API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain data.
@@ -65,7 +119,23 @@ Examples include
 
 Examples:
 * FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
-
+#### Redux
+(Tyler)
+#### Stripe
+(Tyler)
+#### S3
+(Tyler)
+#### Sockets
+(Trevor)
+#### ChartJS
+(Jake)
+#### D3
+(Jake)
+#### Custom Styled Auth0 login form
+#### NodeMailer
+(Trevor)
+#### Twilio
+(Trevor)
 #### Mail
 
 Be advised that there are many challenges with email. Worse still is that email behaves in a not fully predictable way, e.g. sometimes mail will go to spam, and sometimes that same email content, sent later, won't. This is not to discourage you from trying. The reality is that you'll almost certainly send automated email at some point in your career, so learning now still helps, but just to set your expecations.
@@ -86,6 +156,13 @@ Examples of CSS-in-JS libraries:
 * [Glamorous](https://github.com/paypal/glamorous)
 * [JSS](https://github.com/cssinjs/jss)
 * [Radium](https://github.com/FormidableLabs/radium)
+
+### Presentation
+#### Mentions Tech
+(Tyler)
+#### Uses Time Effectively
+(Tyler)
+(We need to finalize what time frame we need to give them)
 
 ## To add:
 * Goal is learning.
