@@ -89,6 +89,9 @@ Domain Registration is the process for registering a domain name (Duh!), which i
 Gotchas:
 * Be aware that registering for a domain name isn’t free. There are many sites that will offer a hosting package that will then give you a free domain name. Take “free” with a grain of salt. It is often cheaper to host elsewhere then wait for a promotion (they happen very often on GoDaddy) where you can register a domain name for $.99/year.
 * Speaking of hosting, that is something you must do before you start the process of hooking up to a domain name.
+* It is highly, highly recommended that get the domain privacy package when registering for a domain name. That will protect against identity theft, prevents domain-related spam, and deters hijackers.
+* If you are hosting with Zeit, you must upgrade your Zeit account to the paid version to use a custom domain name.
+
 
 #### Defined MVP and API
 (Aaron)
@@ -111,6 +114,7 @@ A note on how Digital Ocean servers (and others like it) are structured. Your ap
 Gotchas:
 
 While many students receive instant access to Digital Ocean, some students were told to wait while their account access request was reviewed. Ultimately some students are denied for reasons not explained by Digital Ocean's communications with those students.
+
 ### Custom
 
 ### Techs
@@ -132,6 +136,7 @@ Examples include
 
 Examples:
 * FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
+
 #### Redux
 (Tyler)
 #### Stripe
@@ -140,7 +145,7 @@ Examples:
 (Tyler)
 #### Socket.io
 
-Socket.io enables real-time bidirectional event-based communication. It is a great tool to show real-time analytics, instant messengers, push notifications, or do document collaboration. Socket.io works very well with and is simple to integrate into ExpressJS. The format of sockets in your server is similar to creating endpoints.
+Socket.io enables real-time bidirectional event-based communication. It is a great tool to show real-time analytics, instant messengers, push notifications, or do document collaboration. Socket.io works very well with and is simple to integrate into ExpressJS. The format of sockets in your server is similar to creating endpoints. The socket.io docs are not only great they also have a quick tutorial on how to set up a chat application - https://socket.io/get-started/chat/
 
 Gotchas: 
 * There are many ways to decide who is the recipient of a particular “emit”. Be advised that one way may work in a certain situation but may not in another. The docs have a great emit cheatsheet that will be valuable along the way.
@@ -151,14 +156,6 @@ Gotchas:
 #### D3
 (Jake)
 #### Custom Styled Auth0 login form
-
-#### Twilio
-
-Twilio has a very wide range of servies that can be used. They vary from sending SMS messages, phone calls, real-time video, as well as programmable chats all from your Node.js server. For the sake of this project, it would be recommended that you limit your Twilio experience to just the SMS serviece. Twilio’s SMS service is very easy to use after you go through the extensive set up it requires. 
-
-Gotchas:
-* Twilio does not require an traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
-* There is a free account (Yay!) as well as paid accounts. With the free account, you are limited to sending messages to a single phone number that you choose during creation and only that number while using the free account. A free Twilio account can be great if you just want to be the sole receiver or the information. If you want to have your users receive messages, you’ll have to fork over some moneys per message sent.
 
 #### NodeMailer
 
@@ -171,6 +168,13 @@ Gotchas:
 * Each email client (the software that displays the email) about format. If you only need very simple email messages, you'll be fine. Be advised that all styling must be inline (no external stylesheets; you must use the style attribute), and some styles are ignored and thus don't work, such as flexbox. The rules change over time.
 * Just to make sure that you are aware: all styling is in line styling. A.K.A. Styling will be a time sink if you choose to make a complicated email.
 
+#### Twilio
+
+Twilio has a very wide range of servies that can be used. They vary from sending SMS messages, phone calls, real-time video, as well as programmable chats all from your Node.js server. For the sake of this project, it would be recommended that you limit your Twilio experience to just the SMS serviece. Twilio’s SMS service is very easy to use after you go through the extensive set up it requires. 
+
+Gotchas:
+* Twilio does not require an traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
+* There is a free account (Yay!) as well as paid accounts. With the free account, you are limited to sending messages to a single phone number that you choose during creation and only that number while using the free account. A free Twilio account can be great if you just want to be the sole receiver or the information. If you want to have your users receive messages, you’ll have to fork over some moneys per message sent.
 
 #### CSS-in-JS
 
