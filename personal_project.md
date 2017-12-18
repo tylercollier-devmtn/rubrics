@@ -71,12 +71,25 @@ Total points required: 70
 (Daniel)
 ### Build Tools
 #### Less or Sass
-(Trevor)
+
+Sass and Less are both CSS preprocessors, meaning they extend the CSS language, adding features that allow variables, mixins, functions, and many other techniques.. In normal people speak, they are a way to simplify your CSS workflow, making development and maintenance tasks easier. Though they are both essentially doing the same job, Sass is used far more in the industry and it is the recommended one if you choose to use a CSS preprocessor.
+
+Gotchas: 
+* You might hear the term Sass/SCSS, that’s because they are (for the most part) the same thing.
+* Sass/Less are tools that you can come very reliant on because of the simplicity that they bring to your development. Though it is something that you can simply implement in every project you create moving forward, it is important that you don’t forget/neglect the rules of basic CSS.
+* Getting a preprocessor up and running might be a headache your first time around. Here is a great guide that will make set up a breeze. https://github.com/missyjeanbeutler/sass-demo
+
 #### Webpack or Browserify
 (Tyler)
 ### Planning and Design
 #### Domain Registration
-(Trevor)
+
+Domain Registration is the process for registering a domain name (Duh!), which identifies one more more I.P. addresses with a name that is easier to remember and use in URLs to identify particular web pages. There are  many domain registrars out there and not every choice will be the perfect fit in every way, so do your own research. That being said some of the more popular registars are: namecheap, bluehost, HostGator and GoDaddy.
+
+Gotchas:
+* Be aware that registering for a domain name isn’t free. There are many sites that will offer a hosting package that will then give you a free domain name. Take “free” with a grain of salt. It is often cheaper to host elsewhere then wait for a promotion (they happen very often on GoDaddy) where you can register a domain name for $.99/year.
+* Speaking of hosting, that is something you must do before you start the process of hooking up to a domain name.
+
 #### Defined MVP and API
 (Aaron)
 #### Responsive
@@ -125,23 +138,39 @@ Examples:
 (Tyler)
 #### S3
 (Tyler)
-#### Sockets
-(Trevor)
+#### Socket.io
+
+Socket.io enables real-time bidirectional event-based communication. It is a great tool to show real-time analytics, instant messengers, push notifications, or do document collaboration. Socket.io works very well with and is simple to integrate into ExpressJS. The format of sockets in your server is similar to creating endpoints.
+
+Gotchas: 
+* There are many ways to decide who is the recipient of a particular “emit”. Be advised that one way may work in a certain situation but may not in another. The docs have a great emit cheatsheet that will be valuable along the way.
+* There are two important parts to Socket.io and they both come with the ‘socket.io’ npm package.
+
 #### ChartJS
 (Jake)
 #### D3
 (Jake)
 #### Custom Styled Auth0 login form
-#### NodeMailer
-(Trevor)
+
 #### Twilio
-(Trevor)
-#### Mail
+
+Twilio has a very wide range of servies that can be used. They vary from sending SMS messages, phone calls, real-time video, as well as programmable chats all from your Node.js server. For the sake of this project, it would be recommended that you limit your Twilio experience to just the SMS serviece. Twilio’s SMS service is very easy to use after you go through the extensive set up it requires. 
+
+Gotchas:
+* Twilio does not require an traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
+* There is a free account (Yay!) as well as paid accounts. With the free account, you are limited to sending messages to a single phone number that you choose during creation and only that number while using the free account. A free Twilio account can be great if you just want to be the sole receiver or the information. If you want to have your users receive messages, you’ll have to fork over some moneys per message sent.
+
+#### NodeMailer
+
+Nodemailer is a module for Node.js applications to make sending emails very simple There are only three simple steps from setting up to sending a Nodemail. Step one is setting up a transport service that Nodemailer can use to send the emails (It can be any email that you have, or you can create a new one just for the project.). Step two is setting up the message options. Message options is a fancy way to say “who sends what to whom”. Last step is just using the sendMail() method on your previously created transporter.
 
 Be advised that there are many challenges with email. Worse still is that email behaves in a not fully predictable way, e.g. sometimes mail will go to spam, and sometimes that same email content, sent later, won't. This is not to discourage you from trying. The reality is that you'll almost certainly send automated email at some point in your career, so learning now still helps, but just to set your expecations.
 
-**Email receiving servers**: each email server is allowed to operate as it sees fit. The biggest issue is that your email will be flagged as spam by one provider and not another. The reasons messages are marked as spam are rarely given (as this knowledge would aid spammers).
-**Email clients**: each email client (the software that displays the email) about format. If you only need very simple email messages, you'll be fine. Be advised that all styling must be inline (no external stylesheets; you must use the style attribute), and some styles are ignored and thus don't work, such as flexbox. The rules change over time.
+Gotchas: 
+* Each email server is allowed to operate as it sees fit. The biggest issue is that your email will be flagged as spam by one provider and not another. The reasons messages are marked as spam are rarely given (as this knowledge would aid spammers). 
+* Each email client (the software that displays the email) about format. If you only need very simple email messages, you'll be fine. Be advised that all styling must be inline (no external stylesheets; you must use the style attribute), and some styles are ignored and thus don't work, such as flexbox. The rules change over time.
+* Just to make sure that you are aware: all styling is in line styling. A.K.A. Styling will be a time sink if you choose to make a complicated email.
+
 
 #### CSS-in-JS
 
