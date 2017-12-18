@@ -49,19 +49,13 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | D3                             | 20            |
 |                                             | Other? (approved early on)     | 10-30         |
 |                                             | Custom/Styled Auth0 login form | 10            |
-|                                             | NodeMailer                     | 10            |
+|                                             | NodeMailer/Sendgrid            | 10            |
 |                                             | Twilio                         | 10            |
 |                                             | CSS in JS                      | 10            |
 | [Presentation](#presentation)               |                                |               |
 |                                             | Mentions Tech                  | 10            |
 |                                             | Uses Time Effectively          | 10            |
 | **Total points required**                   |                                | **70**        |
-
-* 3rd party API
-* CSS-in-JS: 10 points
-* Emailers: 10 points
-     * Sendgrid
-     * Nodemailer
 
 ## Definitions
 ### Testing
@@ -123,7 +117,7 @@ While many students receive instant access to Digital Ocean, some students were 
 ### Techs
 #### 3rd party API
 
-API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain data.
+API is a broad term, but we mean web requests using axios or similar. The simplest definition is axios is needed to obtain data. You earn 10 points for each separate API you use, with a max of 20. For our definition, we mean each different domain. For example, if you make 1 API call to swapi.co, 2 to pokeapi.co, and 1 more to OpenWeather, you'll earn a total of 20 points: 10 for swapi.co, 10 for the 2nd API to pokeapi.co, and 0 more for OpenWeather, since you're already at the total of 20.
 
 **What counts:**
 
