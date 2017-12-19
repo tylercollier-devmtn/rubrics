@@ -18,6 +18,14 @@ Always required:
     * Each of the above must manipulate the database (except GET).
 * 1 foreign key and a JOIN statement
     * Yes, you need a JOIN. Usually this means you'd be displaying a list somewhere. Some sites, with the small scope of intended functionality, don't lend themselves to such a list with the database's data. A simple workaround for this is to create an admin page which displays the data. Such a page can even be public if it doesn't contain sensitive information; perhaps don't have a link to the admin page on the site itself but tell users in the README or a private email how to view it (e.g. by visiting #/admin). An example of such a list might be, for a store, all orders for all users. Or what about users without an order (use an outer join)?
+* A fully planned project
+    * [Read more about the planning process](#project-planning)
+    * Defined MVP features
+    * Defined API endpoints (Method, URL, short description)
+        * Example: GET '/api/cars/:id' returns specific car based on passed in id
+    * Defined database schema (Table names, column names and datatypes)
+    * 20 tasks in Trello (or Trello equivalent)
+    * **You need to pass off your plan with your mentor before you write any code**
 
 You also must use technologies to gain points. The technologies and their associated points are listed here, with descriptions farther below.
 
@@ -32,7 +40,7 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | Webpack/Browserify             | 20            |
 | [Planning and Design](#planning-and-design) |                                |               |
 |                                             | Domain Registration            | 10            |
-|                                             | Defined MVP/API                | 10            |
+|                                             | Project Planning               | Required      |
 |                                             | Responsive                     | 20            |
 | [Hosting](#hosting)                         |                                |               |
 |                                             | Zeit, Heroku (easy solutions)  | 0             |
@@ -55,7 +63,16 @@ You also must use technologies to gain points. The technologies and their associ
 | [Presentation](#presentation)               |                                |               |
 |                                             | Mentions Tech                  | 10            |
 |                                             | Uses Time Effectively          | 10            |
-| **Total points required**                   |                                | **70**        |
+
+Total points required: 60
+
+| Example Path:            |    |
+|--------------------------|----|
+| Sass                     | 10 |
+| Redux                    | 10 |
+| Responsive               | 20 |
+| Full Presentation Points | 20 |
+| **TOTAL**                | 60 |
 
 ## Definitions
 ### Testing
@@ -90,8 +107,11 @@ Gotchas:
 * If you are hosting with Zeit, you must upgrade your Zeit account to the paid version to use a custom domain name.
 
 
-#### Defined MVP and API
-(Aaron)
+#### Project Planning
+* Planning is extremely important. It's said "Weeks of programming can save you hours of planning". It can be tempting to jump right into code immediately at the start of a project, but you'll quickly start making mistakes and losing time. Taking a good amount of time to plan a project out, before you even write a line of code, will make the coding process significantly smoother and quicker.
+* An important concept in planning is the "MVP". This stands for Mininum Viable Product. Simply, what is the smallest, simplest, least-amount-of-features version of your product that you could make that would still be considered completed and passable. For example: I am making a simple chat app. What are some "MVP Features"? The ability to type in a message, the ability to send a message, and the ability to recieve a message. If I want to add any other features, I need to carefully think if they are part of my MVP. A cool animation whenever I send a message? A notification sound when I recieve a message? Those aren't absolutely necessary for my app to function, so I need to put them aside until I finish all my MVP features. When planning, make a list of all the features your app **needs** to function and work on only them until they are done.
+* Another important facet of planning is setting tasks for yourself. You can waste a lot of time trying to figure what exactly to do next. Switching constantly between thinking about what to do and actually doing can really slow you down. It's a good idea to take some time to split your project into tasks. The more the better! A good goal is to see if you can split your entire project into hour chunks. If you think you have made as many tasks as you can think of, break the tasks you have into smaller tasks. This will allow you to just focus on actually doing the tasks, speeding up your development times. Trello.com is a good site for task management.
+* It's worth noting: plans don't need to be set in stone! You'll find the need for some extra endpoint, or you'll need to change your schemas up, or you'll realize a given feature really isn't MVP status. That's completely fine, it's important to be agile. It's important to plan, but it's also important not to waste time trying to come up with every single eventuality.
 #### Responsive
 (Jake)
 ### Hosting
