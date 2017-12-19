@@ -31,20 +31,10 @@ You also must use technologies to gain points. The technologies and their associ
 
 | Category                                    | Name                           | Points        |
 |---------------------------------------------|--------------------------------|---------------|
-| [Testing](#testing)                         |                                |               |
-|                                             | Unit Tests                     | 30            |
-|                                             | Endpoint Tests                 | 20            |
-|                                             | E2E Tests                      | 40            |
-| [Build tools](#build-tools)                 |                                |               |
-|                                             | Sass/Less                      | 10            |
-|                                             | Webpack/Browserify             | 20            |
 | [Planning and Design](#planning-and-design) |                                |               |
-|                                             | Domain Registration            | 10            |
 |                                             | Project Planning               | Required      |
+|                                             | Domain Registration            | 10            |
 |                                             | Responsive                     | 20            |
-| [Hosting](#hosting)                         |                                |               |
-|                                             | Zeit, Heroku (easy solutions)  | 0             |
-|                                             | Digital Ocean                  | 10            |
 | [Custom](#custom)                           |                                |               |
 |                                             | Instructor approves early on   | ?             |
 | [Techs](#techs)                             |                                |               |
@@ -60,42 +50,41 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | NodeMailer/Sendgrid            | 10            |
 |                                             | Twilio                         | 10            |
 |                                             | CSS in JS                      | 10            |
+| [Build tools](#build-tools)                 |                                |               |
+|                                             | Sass/Less                      | 10            |
+|                                             | Webpack/Browserify             | 20            |
+| [Hosting](#hosting)                         |                                |               |
+|                                             | Zeit, Heroku (easy solutions)  | 0             |
+|                                             | Digital Ocean                  | 10            |
+| [Testing](#testing)                         |                                |               |
+|                                             | Unit Tests                     | 30            |
+|                                             | Endpoint Tests                 | 20            |
+|                                             | E2E Tests                      | 40            |
 | [Presentation](#presentation)               |                                |               |
 |                                             | Mentions Tech                  | 10            |
 |                                             | Uses Time Effectively          | 10            |
 
 Total points required: 60
 
-| Example Path:            |    |
-|--------------------------|----|
-| Sass                     | 10 |
-| Redux                    | 10 |
-| Responsive               | 20 |
-| Full Presentation Points | 20 |
-| **TOTAL**                | 60 |
+| Example Path:            | Points |
+|--------------------------|--------|
+| Sass                     | 10     |
+| Redux                    | 10     |
+| Responsive               | 20     |
+| Full Presentation Points | 20     |
+| **TOTAL**                | 60     |
 
 ## Definitions
-### Testing
-#### Unit Tests
-(Daniel)
-#### Endpoint Tests
-(Daniel)
-#### E2E Tests
-(Daniel)
-### Build Tools
-#### Less or Sass
 
-Sass and Less are both CSS preprocessors, meaning they extend the CSS language, adding features that allow variables, mixins, functions, and many other techniques. They are a way to simplify your CSS workflow, making development and maintenance tasks easier. Though they are both essentially doing the same job, Sass is used far more in the industry and it is the recommended one if you choose to use a CSS preprocessor.
-
-Gotchas: 
-* You might hear the term Sass/SCSS, that’s because they are (for the most part) the same thing.
-* Sass/Less are tools that you can become very reliant on because of the simplicity that they bring to your development. Though it is something that you can simply implement in every project you create moving forward, it is important that you don’t forget/neglect the rules of basic CSS.
-* Getting a preprocessor up and running might be a headache your first time around. Here is a great guide that will make set up a breeze. https://github.com/missyjeanbeutler/sass-demo
-
-#### Webpack or Browserify
-Webpack is the build tool that powers `create-react-app`. Behind the scenes, `create-react-app` uses Webpack to perform build steps that eventually results in the `bundle.js` file your website uses. There is also the `webpack-dev-server` that is used to run the site in development mode, which allows for file watching and auto-refreshing.
 ### Planning and Design
-(Be sure to explain project-plan.pdf)
+
+#### Project Planning
+* Planning is extremely important. It's said "Weeks of programming can save you hours of planning". It can be tempting to jump right into code immediately at the start of a project, but you'll quickly start making mistakes and losing time. Taking a good amount of time to plan a project out, before you even write a line of code, will make the coding process significantly smoother and quicker.
+* An important concept in planning is the "MVP". This stands for Mininum Viable Product. Simply, what is the smallest, simplest, least-amount-of-features version of your product that you could make that would still be considered completed and passable. For example: I am making a simple chat app. What are some "MVP Features"? The ability to type in a message, the ability to send a message, and the ability to recieve a message. If I want to add any other features, I need to carefully think if they are part of my MVP. A cool animation whenever I send a message? A notification sound when I recieve a message? Those aren't absolutely necessary for my app to function, so I need to put them aside until I finish all my MVP features. When planning, make a list of all the features your app **needs** to function and work on only them until they are done.
+* Another important facet of planning is setting tasks for yourself. You can waste a lot of time trying to figure what exactly to do next. Switching constantly between thinking about what to do and actually doing can really slow you down. It's a good idea to take some time to split your project into tasks. The more the better! A good goal is to see if you can split your entire project into hour chunks. If you think you have made as many tasks as you can think of, break the tasks you have into smaller tasks. This will allow you to just focus on actually doing the tasks, speeding up your development times. Trello.com is a good site for task management.
+* It's worth noting: plans don't need to be set in stone! You'll find the need for some extra endpoint, or you'll need to change your schemas up, or you'll realize a given feature really isn't MVP status. That's completely fine, it's important to be agile. It's important to plan, but it's also important not to waste time trying to come up with every single eventuality.
+* To aid in planning, you might want to use the [project-plan.pdf](project-plan.pdf) document in this repo. It is optional, and you can use Twilio instead or in addition.
+
 #### Domain Registration
 
 Domain Registration is the process for registering a domain name, which identifies one or more IP addresses with a name that is easier to remember and use in URLs to identify particular web pages. There are many domain registrars out there and not every choice will be the perfect fit in every way, so do your own research. That being said some of the more popular registrars are: namecheap, bluehost, HostGator and GoDaddy.
@@ -106,31 +95,8 @@ Gotchas:
 * It is highly recommended that get the domain privacy package when registering for a domain name. That will protect against identity theft, prevents domain-related spam, and deters hijackers.
 * If you are hosting with Zeit, you must upgrade your Zeit account to the paid version to use a custom domain name.
 
-
-#### Project Planning
-* Planning is extremely important. It's said "Weeks of programming can save you hours of planning". It can be tempting to jump right into code immediately at the start of a project, but you'll quickly start making mistakes and losing time. Taking a good amount of time to plan a project out, before you even write a line of code, will make the coding process significantly smoother and quicker.
-* An important concept in planning is the "MVP". This stands for Mininum Viable Product. Simply, what is the smallest, simplest, least-amount-of-features version of your product that you could make that would still be considered completed and passable. For example: I am making a simple chat app. What are some "MVP Features"? The ability to type in a message, the ability to send a message, and the ability to recieve a message. If I want to add any other features, I need to carefully think if they are part of my MVP. A cool animation whenever I send a message? A notification sound when I recieve a message? Those aren't absolutely necessary for my app to function, so I need to put them aside until I finish all my MVP features. When planning, make a list of all the features your app **needs** to function and work on only them until they are done.
-* Another important facet of planning is setting tasks for yourself. You can waste a lot of time trying to figure what exactly to do next. Switching constantly between thinking about what to do and actually doing can really slow you down. It's a good idea to take some time to split your project into tasks. The more the better! A good goal is to see if you can split your entire project into hour chunks. If you think you have made as many tasks as you can think of, break the tasks you have into smaller tasks. This will allow you to just focus on actually doing the tasks, speeding up your development times. Trello.com is a good site for task management.
-* It's worth noting: plans don't need to be set in stone! You'll find the need for some extra endpoint, or you'll need to change your schemas up, or you'll realize a given feature really isn't MVP status. That's completely fine, it's important to be agile. It's important to plan, but it's also important not to waste time trying to come up with every single eventuality.
 #### Responsive
 (Jake)
-### Hosting
-
-Note: hosting, in general, is tough. You should therefore not wait until the last moment to give it a try. It's tempting to do so, since it's sometimes thought of as the final step, but shouldn't be thought of in this matter because there are considerations to take into account. Depending on your technology choices, you might not be able to host with one solution vs others. See further consideration in the sections below.
-
-#### Zeit
-
-Gotchas:
-
-Zeit normally takes about 1 or 2 minutes to deploy. During one cohort's personal projects, some students were seeing times of 15-30 minutes. Sometimes random failures happened. This was later acknowledged and addressed by Zeit, but be advised.
-
-#### Digital Ocean
-
-A note on how Digital Ocean servers (and others like it) are structured. Your app will run on some port number above 1024, like 3000, 3030, or whatever you choose. However, the normal http port is 80 and https is 443, which require root/admin access. Therefore, the pattern is to run a "reverse proxy" tool, such as Nginx or Apache, which will accept web requests on those ports, and forward the traffic to your node server. When setting up your Digital Ocean droplet, ensure you choose to have Nginx, and follow steps to forward the web traffic between ports.
-
-Gotchas:
-
-While many students receive instant access to Digital Ocean, some students were told to wait while their account access request was reviewed. Ultimately some students are denied for reasons not explained by Digital Ocean's communications with those students.
 
 ### Custom
 
@@ -206,6 +172,47 @@ Examples of CSS-in-JS libraries:
 * [Glamorous](https://github.com/paypal/glamorous)
 * [JSS](https://github.com/cssinjs/jss)
 * [Radium](https://github.com/FormidableLabs/radium)
+
+### Build Tools
+
+#### Less or Sass
+
+Sass and Less are both CSS preprocessors, meaning they extend the CSS language, adding features that allow variables, mixins, functions, and many other techniques. They are a way to simplify your CSS workflow, making development and maintenance tasks easier. Though they are both essentially doing the same job, Sass is used far more in the industry and it is the recommended one if you choose to use a CSS preprocessor.
+
+Gotchas:
+* You might hear the term Sass/SCSS, that’s because they are (for the most part) the same thing.
+* Sass/Less are tools that you can become very reliant on because of the simplicity that they bring to your development. Though it is something that you can simply implement in every project you create moving forward, it is important that you don’t forget/neglect the rules of basic CSS.
+* Getting a preprocessor up and running might be a headache your first time around. Here is a great guide that will make set up a breeze. https://github.com/missyjeanbeutler/sass-demo
+
+#### Webpack or Browserify
+
+Webpack is the build tool that powers `create-react-app`. Behind the scenes, `create-react-app` uses Webpack to perform build steps that eventually results in the `bundle.js` file your website uses. There is also the `webpack-dev-server` that is used to run the site in development mode, which allows for file watching and auto-refreshing.
+
+### Hosting
+
+Note: hosting, in general, is tough. You should therefore not wait until the last moment to give it a try. It's tempting to do so, since it's sometimes thought of as the final step, but shouldn't be thought of in this matter because there are considerations to take into account. Depending on your technology choices, you might not be able to host with one solution vs others. See further consideration in the sections below.
+
+#### Zeit
+
+Gotchas:
+
+Zeit normally takes about 1 or 2 minutes to deploy. During one cohort's personal projects, some students were seeing times of 15-30 minutes. Sometimes random failures happened. This was later acknowledged and addressed by Zeit, but be advised.
+
+#### Digital Ocean
+
+A note on how Digital Ocean servers (and others like it) are structured. Your app will run on some port number above 1024, like 3000, 3030, or whatever you choose. However, the normal http port is 80 and https is 443, which require root/admin access. Therefore, the pattern is to run a "reverse proxy" tool, such as Nginx or Apache, which will accept web requests on those ports, and forward the traffic to your node server. When setting up your Digital Ocean droplet, ensure you choose to have Nginx, and follow steps to forward the web traffic between ports.
+
+Gotchas:
+
+While many students receive instant access to Digital Ocean, some students were told to wait while their account access request was reviewed. Ultimately some students are denied for reasons not explained by Digital Ocean's communications with those students.
+
+### Testing
+#### Unit Tests
+(Daniel)
+#### Endpoint Tests
+(Daniel)
+#### E2E Tests
+(Daniel)
 
 ### Presentation
 #### Mentions Tech
