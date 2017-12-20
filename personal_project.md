@@ -71,7 +71,7 @@ Total points required: 50
 | Redux                    | 10     |
 | Responsive               | 20     |
 | Presentation Points      | 10     |
-| **TOTAL**                | 60     |
+| **TOTAL**                | 50     |
 
 ## Definitions
 
