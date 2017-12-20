@@ -95,7 +95,10 @@ Gotchas:
 * If you are hosting with Zeit, you must upgrade your Zeit account to the paid version to use a custom domain name.
 
 #### Responsive
-(Jake)
+
+Responsive design means that your application looks good regardless of the size of the screen.  Whether the user is using your site from their laptop or phone it should keep an effective layout and proper functionality.  This is done using response CSS, media queries, inline-styling, and various other strategies.  One main strategy is mobile-first design, meaning design your site for a phone sized screen first and build it out for larger screen sizes.
+
+Gotchas: Layout and Design take alot of time.  Making your site look good in multiple different layouts will take even more time. BUT if there's a chance a employer may visit your site on their mobile device, this could be valueable time spent!
 
 ### Custom
 
@@ -150,9 +153,21 @@ Gotchas:
 * There are two important parts to Socket.io (server and client) and they both come with the ‘socket.io’ npm package.
 
 #### ChartJS
-(Jake)
+
+In the world of data – visualization plays a keen role in portraying the data.  Being able to effectively display that data is made a little easier with chartJS.  ChartJS is a open source HTML library, available as a react-exstension that makes displaying data in the form of a graph or chart fairly simple.  The documentation is pretty straightforward, and integration with React is very doable.
+
+Gotchas: ChartJS has certain limitations that other libraries, like D3 do not.  While it is easier to use, it has less options and customizations you have x amount of graph/chart options you can use and while interativity is being added, it is not as updated as D3.
+
 #### D3
-(Jake)
+
+D3 is more of a libary for creating and manipulating HTML than it is a charting libary like ChartJS.  The possibilites with D3 are pretty endless, D3 can go way beyond graphs/charts and into other sort of graphics you may need.  Like this: https://bl.ocks.org/mbostock/1353700 the many many ways that you can visualize data with D3 make it pretty awesome.
+
+Gotchas: D3's main drawback is its difficult to incorporate, there is a steep learning curve.
+
+The syntaxes are more complex than Chart.js because it involves creating each element of the chart. Sifting through the documentation can take awhile.  Also, some high-level stuff, D3 directly manipulates the DOM while react is built around manipulating the virtual DOM.  Get React and D3 to play nicely together takes some fiddling. Here's a good article for this:
+
+https://medium.com/@tibotiber/react-d3-js-balancing-performance-developer-experience-4da35f912484 Don't let these gotchas scare you, D3 is a valuable libary to have knowledge of to impress potential employers.
+
 #### Custom Styled Auth0 login form
 
 #### NodeMailer
