@@ -269,6 +269,7 @@ We'll be putting more specific defintions on these, but here are the award title
 * Best presentation
 * CSS/Design
 * Best solution for a business
+Each award will have a first place project and a runner up project.
 
 ## To add:
 * Goal is learning.
