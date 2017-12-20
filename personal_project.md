@@ -88,6 +88,8 @@ Total points required: 50
 
 Domain Registration is the process for registering a domain name, which identifies one or more IP addresses with a name that is easier to remember and use in URLs to identify particular web pages. There are many domain registrars out there and not every choice will be the perfect fit in every way, so do your own research. That being said some of the more popular registrars are: namecheap, bluehost, HostGator and GoDaddy.
 
+Points: A registered URL that simply redirects you to an IP will not count towards your domain registration points. It must be fully integrated to the point where your route urls will add on to the end of your registered domain. As in, www.YourSite.com/#/Home opposed to 138.68.255.191/#/Home and so on.
+
 Gotchas:
 * Be aware that registering for a domain name isn’t free. There are many sites that will offer a hosting package that will then give you a free domain name. Take “free” with a grain of salt. It is often cheaper to host elsewhere then wait for a promotion (they happen very often on GoDaddy) where you can register a domain name for $0.99/year.
 * Speaking of hosting, that is something you must do before you start the process of hooking up to a domain name.
@@ -148,6 +150,8 @@ Points:
 
 Socket.io enables real-time bidirectional event-based communication. It is a great tool to show real-time analytics, instant messengers, push notifications, or do document collaboration. Socket.io works very well with and is simple to integrate into ExpressJS. The format of sockets in your server is similar to creating endpoints. The socket.io docs are not only great they also have a quick tutorial on how to set up a chat application - https://socket.io/get-started/chat/
 
+Points: To show your ability to use socket.io ,and get the full 20 points, you must create and use at minimum three unique listeners as well as three unique emitters on both the server and client individually (12 total). To get 10 points you must create one unique listener as well as one unique emitter on both the server and the client individually (4 total).
+
 Gotchas: 
 * There are many ways to decide who is the recipient of a particular “emit”. Be advised that one way may work in a certain situation but may not in another. The docs have a great emit cheatsheet that will be valuable along the way.
 * There are two important parts to Socket.io (server and client) and they both come with the ‘socket.io’ npm package.
@@ -174,6 +178,8 @@ Nodemailer is a module for Node.js applications to make sending emails very simp
 
 Be advised that there are many challenges with email. Worse still is that email behaves in a not fully predictable way, e.g. sometimes mail will go to spam, and sometimes that same email content, sent later, won't. This is not to discourage you from trying. The reality is that you'll almost certainly send automated email at some point in your career, so learning now still helps, but just to set your expecations.
 
+Points: The ability to send an email with dynamic content with at least 5 in-line styles to a dynamic email address is the requirements for points.
+
 Gotchas: 
 * Each email server is allowed to operate as it sees fit. The biggest issue is that your email might be flagged as spam by one provider and not another. The reasons messages are marked as spam are rarely given (as this knowledge would aid spammers). 
 * Email clients (the software that displays the email) can be picky about format. If you only need very simple email messages, you'll be fine. Be advised that all styling must be inline (no external stylesheets; you must use the style attribute), and some styles are ignored and thus don't work, such as flexbox. The rules change over time.
@@ -182,6 +188,8 @@ Gotchas:
 #### Twilio
 
 Twilio has a wide range of servies that can be used. They vary from sending SMS messages, phone calls, real-time video, as well as programmable chats all from your Node.js server. For the sake of this project, it would be recommended that you limit your Twilio experience to just the SMS service. Twilio’s SMS service is very easy to use after you go through the extensive set up it requires. 
+
+Points: Demonstrating the ablity to send specific information (the makes sense with your project's overall idea) though SMS will net you points here.
 
 Gotchas:
 * Twilio does not require a traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
@@ -206,6 +214,8 @@ Examples of CSS-in-JS libraries:
 #### Less or Sass
 
 Sass and Less are both CSS preprocessors, meaning they extend the CSS language, adding features that allow variables, mixins, functions, and many other techniques. They are a way to simplify your CSS workflow, making development and maintenance tasks easier. Though they are both essentially doing the same job, Sass is used far more in the industry and it is the recommended one if you choose to use a CSS preprocessor.
+
+Points: Using at minimum one example each of variables, mixins, and inheritance as well as 50% of your project wide styling being done in Sass/Less format is the requirment for points. 
 
 Gotchas:
 * You might hear the term Sass/SCSS, that’s because they are (for the most part) the same thing.
@@ -261,14 +271,6 @@ Don't:
 #### Uses Time Effectively
 
 Your presentation must be between within 60 seconds of your target to get 10 points. The default target is 2 minutes, thus you're shooting for 1-3 minutes. However, you may tell the timer your target is anywhere from 2-4 minutes.
-
-## Awards
-We'll be putting more specific defintions on these, but here are the award titles:
-* Best Overall
-* Most Technical
-* Best presentation
-* CSS/Design
-* Best solution for a business
 
 ## To add:
 * Goal is learning.
