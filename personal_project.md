@@ -189,7 +189,7 @@ Gotchas:
 
 Twilio has a wide range of servies that can be used. They vary from sending SMS messages, phone calls, real-time video, as well as programmable chats all from your Node.js server. For the sake of this project, it would be recommended that you limit your Twilio experience to just the SMS service. Twilio’s SMS service is very easy to use after you go through the extensive set up it requires. 
 
-Points: Demonstrating the ablity to send specific information (the makes sense with your project's overall idea) though SMS will net you points here.
+Points: Demonstrating the ablity to send specific information (that makes sense with your project's overall idea) though SMS will net you points here.
 
 Gotchas:
 * Twilio does not require a traditional “API key”. To set up your Twilio SMS service you must request an account SID and a Twilio Authentication token. You must then apply for a phone number that will be handling all of the message sending.
