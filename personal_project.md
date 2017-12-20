@@ -262,6 +262,14 @@ Don't:
 
 Your presentation must be between within 60 seconds of your target to get 10 points. The default target is 2 minutes, thus you're shooting for 1-3 minutes. However, you may tell the timer your target is anywhere from 2-4 minutes.
 
+## Awards
+We'll be putting more specific defintions on these, but here are the award titles:
+* Best Overall
+* Most Technical
+* Best presentation
+* CSS/Design
+* Best solution for a business
+
 ## To add:
 * Goal is learning.
 * Can earn partial points sometimes, like on "responsive". If you have a little bit that's responsive, but not the whole site, this isn't worth full points. On the other hand, if e.g. a student tries to use Digital Ocean but it doesn't work, then it should probably be 0 points (although the student is allowed to come back after they've fixed it).
