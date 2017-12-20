@@ -249,6 +249,8 @@ While many students receive instant access to Digital Ocean, some students were 
 
 Unit tests check to make sure that the individual units (think functions) are working correctly. The idea is to create a suite of tests that, if passed, would give some surety that the functions in your app are set up correctly. Jest is a simple testing framework that you can use.
 
+Points: 5 unit tests will get you full points
+
 Gotchas:
 
 Make sure you research how to set up and tear down your app in order to make sure that you can perform your tests on the right data.
@@ -257,9 +259,13 @@ Make sure you research how to set up and tear down your app in order to make sur
 
 Endpoint tests are designed to check the routes that are created by your server (Express). Tests can be created using Postman.
 
+Points: 5 endpoint tests will get you full points
+
 #### E2E Tests
 
 End to end tests are much trickier than unit or endpoint testing. It involves testing your app through your UI. Selenium is a common tool for e2e tests.
+
+Points: 1 endpoint test will be sufficient, however this must be pre-approved before attempting
 
 ### Presentation
 
