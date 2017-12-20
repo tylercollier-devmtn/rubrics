@@ -41,7 +41,7 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | 3rd Party API                  | 10 per/20 max |
 |                                             | Redux                          | 10            |
 |                                             | Stripe                         | 20            |
-|                                             | s3                             | 10            |
+|                                             | Amazon S3 / React S3 Uploader  | 10 / 10 more  |
 |                                             | Sockets                        | 20            |
 |                                             | ChartJs                        | 10            |
 |                                             | D3                             | 20            |
@@ -61,17 +61,16 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | Endpoint Tests                 | 20            |
 |                                             | E2E Tests                      | 40            |
 | [Presentation](#presentation)               |                                |               |
-|                                             | Mentions Tech                  | 10            |
 |                                             | Uses Time Effectively          | 10            |
 
-Total points required: 60
+Total points required: 50
 
 | Example Path:            | Points |
 |--------------------------|--------|
 | Sass                     | 10     |
 | Redux                    | 10     |
 | Responsive               | 20     |
-| Full Presentation Points | 20     |
+| Presentation Points      | 10     |
 | **TOTAL**                | 60     |
 
 ## Definitions
@@ -100,6 +99,10 @@ Gotchas:
 
 ### Custom
 
+For any points you want that aren't mentioned here:
+* you must get pre-approval
+* there must be an objective way to define the requirement, as is done throughout this document
+
 ### Techs
 #### 3rd party API
 
@@ -121,11 +124,23 @@ Examples:
 * FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
 
 #### Redux
-(Tyler)
+
+You must read from and write to (modify) the Redux store. You do not technically need exported actions and action creators, but you must have a store, a reducer, and you must dispatch.
+
 #### Stripe
-(Tyler)
-#### S3
-(Tyler)
+
+Stripe is a set of APIs that allows you to take payments. There is a sandbox mode so that you don't have to do real payments. https://stripe.com/docs
+
+To get points: you'll need to collect payment information on the client. Eventually you'll need to charge the payment from your server code. If it works, you'll be able to prove it by seeing the new payment in your Stripe dashboard.
+
+#### Amazon S3
+
+Amazon's S3 service is a bucket to store files in the cloud.
+
+Points:
+* 10 points for creating your own S3 account and using files, such as storing images there and showing those images on your website.
+* 10 more points for using React S3 Uploader, which helps to upload submitted files (often pictures) from the user to S3. The files must be then shown or used by your site.
+
 #### Socket.io
 
 Socket.io enables real-time bidirectional event-based communication. It is a great tool to show real-time analytics, instant messengers, push notifications, or do document collaboration. Socket.io works very well with and is simple to integrate into ExpressJS. The format of sockets in your server is similar to creating endpoints. The socket.io docs are not only great they also have a quick tutorial on how to set up a chat application - https://socket.io/get-started/chat/
@@ -215,11 +230,24 @@ While many students receive instant access to Digital Ocean, some students were 
 (Daniel)
 
 ### Presentation
-#### Mentions Tech
-(Tyler)
+
+#### What to present
+Here are general hints that aren't related to points:
+
+You should practice presenting. Don't wing it.
+
+You should present from the context of being a student at a bootcamp, as opposed to e.g. a solely business presentation or only a code presentation. Start off by mentioning the big picture of your idea. Keep this concise, although if there is background info, like a story to tell, that's fine. The show the product you built (for most, that's a website), demonstrating its features. Transition to showing interesting/challenging code. You may take questions if you want, but it all counts toward your presentation time.
+
+The idea is to get you in the practice of showing off your talents, and being able to communicate technical info, such as code.
+
+Don't:
+* show off registering for your site... assume everyone knows that concept
+* mention your _experience_ of the personal project, as there is already plenty of that discussion during day-to-day conversation
+* mention what's broken or what you didn't get to
+
 #### Uses Time Effectively
-(Tyler)
-(We need to finalize what time frame we need to give them)
+
+Your presentation must be between within 60 seconds of your target to get 10 points. The default target is 2 minutes, thus you're shooting for 1-3 minutes. However, you may tell the timer your target is anywhere from 2-4 minutes.
 
 ## To add:
 * Goal is learning.
