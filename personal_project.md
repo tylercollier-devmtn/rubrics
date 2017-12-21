@@ -52,7 +52,7 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | CSS in JS                      | 10            |
 | [Build tools](#build-tools)                 |                                |               |
 |                                             | Sass/Less                      | 10            |
-|                                             | Webpack/Browserify             | 20            |
+|                                             | Webpack                        | 20            |
 | [Hosting](#hosting)                         |                                |               |
 |                                             | Zeit, Heroku (easy solutions)  | 0             |
 |                                             | Digital Ocean                  | 10            |
@@ -115,7 +115,7 @@ API is a broad term, but we mean web requests using axios or similar. The simple
 
 **What counts:**
 
-Examples include
+Examples that count include
 
 * The Star Wars API https://swapi.co/
 * The Pokemon API https://pokeapi.co/
@@ -125,7 +125,8 @@ Examples include
 
 * you find a library that does most of the raw API calls for you. E.g. the Stripe client side library wouldn't count because it makes the web requests for you and hides you from this complexity. Note that Stripe is a library that DOES count for points as a "Tech" (see elsewhere in this document).
 
-Examples:
+Examples that don't count:
+
 * FillMurray - http://www.fillmurray.com/: (A student did try to use this site.) it's an image placeholder (aka filler images) site. No axios calls needed.
 
 #### Redux
@@ -209,6 +210,8 @@ Examples of CSS-in-JS libraries:
 * [JSS](https://github.com/cssinjs/jss)
 * [Radium](https://github.com/FormidableLabs/radium)
 
+**Points** At least 40 style properties must be from CSS-in-JS in the project. Said another way, 40 lines of CSS (like `padding: 10px`) must exist as CSS-in-JS styles. You may split those up across as many components as you want.
+
 ### Build Tools
 
 #### Less or Sass
@@ -222,9 +225,11 @@ Gotchas:
 * Sass/Less are tools that you can become very reliant on because of the simplicity that they bring to your development. Though it is something that you can simply implement in every project you create moving forward, it is important that you don’t forget/neglect the rules of basic CSS.
 * Getting a preprocessor up and running might be a headache your first time around. Here is a great guide that will make set up a breeze. https://github.com/missyjeanbeutler/sass-demo
 
-#### Webpack or Browserify
+#### Webpack
 
-Webpack is the build tool that powers `create-react-app`. Behind the scenes, `create-react-app` uses Webpack to perform build steps that eventually results in the `bundle.js` file your website uses. There is also the `webpack-dev-server` that is used to run the site in development mode, which allows for file watching and auto-refreshing.
+Webpack is the build tool that powers `create-react-app`. Behind the scenes, `create-react-app` uses Webpack to perform build steps that eventually results in the `bundle.js` file your website uses. There is also the `webpack-dev-server` that is used to run the site in development mode, which allows for file watching and auto-refreshing. One of the neatest features is hot module replacement (HMR), where your new code replaces old code, and your site updates accordingly without doing a full refresh. You state is kept intact, which will make you super happy as a developer.
+
+**Points** 20 points. To get points, you must create a webpack config file yourself. You may not use create-react-app's `eject` functionality to build it for you.
 
 ### Hosting
 
@@ -286,6 +291,8 @@ Don't:
 #### Uses Time Effectively
 
 Your presentation must be between within 60 seconds of your target to get 10 points. The default target is 2 minutes, thus you're shooting for 1-3 minutes. However, you may tell the timer your target is anywhere from 2-4 minutes.
+
+**Points** 10 points. 0 points if you go under or over.
 
 ## Awards
 We'll be putting more specific defintions on these, but here are the award titles:
