@@ -279,7 +279,7 @@ Here are general hints that aren't related to points:
 
 You should practice presenting. Don't wing it.
 
-You should present from the context of being a student at a bootcamp, as opposed to e.g. a solely business presentation or only a code presentation. Start off by mentioning the big picture of your idea. Keep this concise, although if there is background info, like a story to tell, that's fine. The show the product you built (for most, that's a website), demonstrating its features. Transition to showing interesting/challenging code. You may take questions if you want, but it all counts toward your presentation time.
+You should present from the context of being a student at a bootcamp, as opposed to e.g. a solely business presentation or only a code presentation. Start off by mentioning the big picture of your idea. Keep this concise, although if there is background info, like a story to tell, that's fine. Then show the product you built (for most, that's a website), demonstrating its features. Transition to showing interesting/challenging code. You may take questions if you want, but it all counts toward your presentation time.
 
 The idea is to get you in the practice of showing off your talents, and being able to communicate technical info, such as code.
 
@@ -287,6 +287,8 @@ Don't:
 * show off registering for your site... assume everyone knows that concept
 * mention your _experience_ of the personal project, as there is already plenty of that discussion during day-to-day conversation
 * mention what's broken or what you didn't get to
+
+Here's a good example presentation: [https://youtu.be/ZG7_U153Xqw](https://youtu.be/ZG7_U153Xqw)
 
 #### Uses Time Effectively
 
