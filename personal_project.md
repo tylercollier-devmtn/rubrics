@@ -46,7 +46,6 @@ You also must use technologies to gain points. The technologies and their associ
 |                                             | ChartJs                        | 10            |
 |                                             | D3                             | 20            |
 |                                             | Other? (approved early on)     | 10-30         |
-|                                             | Custom/Styled Auth0 login form | 10            |
 |                                             | NodeMailer/Sendgrid            | 10            |
 |                                             | Twilio                         | 10            |
 |                                             | CSS in JS                      | 10            |
