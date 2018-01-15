@@ -21,6 +21,7 @@ Always required:
 * A fully planned project
     * [Read more about the planning process](#project-planning)
     * Defined MVP features
+    * Your expected path of getting points (see "Example Path" below)
     * Defined API endpoints (Method, URL, short description)
         * Example: GET '/api/cars/:id' returns specific car based on passed in id
     * Defined database schema (Table names, column names and datatypes)
